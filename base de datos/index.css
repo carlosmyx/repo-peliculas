@@ -1,0 +1,62 @@
+/* ...existing code... */
+<style>
+    body {
+        background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+        color: #22223b;
+        min-height: 100vh;
+        font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        transition: background 0.6s;
+    }
+    h1 {
+        color: #3a0ca3;
+        text-shadow: 0 2px 12px #b5179e33;
+        letter-spacing: 2px;
+    }
+    .card-link {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px 0 #4361ee22, 0 1.5px 6px 0 #b5179e11;
+        overflow: hidden;
+    }
+    .card-link:hover {
+        transform: scale(1.07) rotate(-2deg);
+        box-shadow: 0 8px 32px 0 #4361ee44, 0 3px 12px 0 #b5179e22;
+        z-index: 2;
+    }
+    .card {
+        border: none;
+        border-radius: 18px;
+        background: linear-gradient(120deg, #bde0fe 0%, #a2d2ff 100%);
+        color: #22223b;
+        transition: background 0.4s, color 0.4s;
+    }
+    .bg-primary {
+        background: linear-gradient(120deg, #4361ee 0%, #b5179e 100%) !important;
+        color: #fff !important;
+    }
+    .bg-secondary {
+        background: linear-gradient(120deg, #f72585 0%, #7209b7 100%) !important;
+        color: #fff !important;
+    }
+    .card-body h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        letter-spacing: 1px;
+        color: inherit;
+        text-shadow: 0 2px 8px #fff3;
+    }
+    .card-body p {
+        font-size: 1.1rem;
+        color: #22223bcc;
+        margin-bottom: 0;
+        transition: color 0.3s;
+    }
+    .card-link:hover .card-body p {
+        color: #fff;
+    }
+    @media (max-width: 768px) {
+        .card-body h2 { font-size: 1.4rem; }
+        .container { padding: 1.5rem 0; }
+    }
+</style>
